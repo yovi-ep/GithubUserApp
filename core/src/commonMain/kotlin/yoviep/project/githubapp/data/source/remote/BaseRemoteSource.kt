@@ -15,11 +15,12 @@ abstract class BaseRemoteSource {
                 isLenient = true
                 ignoreUnknownKeys = true
                 useAlternativeNames = false
+                prettyPrint = true
             })
         }
 
         install(Logging) {
-            logger = Logger.SIMPLE
+            logger = Logger.DEFAULT
             level = LogLevel.BODY
         }
     }
